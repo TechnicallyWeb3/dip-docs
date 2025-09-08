@@ -291,9 +291,3 @@ dig TXT yourdomain.com +short
 - **Community**: Discord server for user support
 - **Support Tickets**: Direct support for premium users
 - **Status Page**: Real-time service status
-
-### Resources
-- [API Documentation](./05-api-reference.md)
-- [Migration Guide](./06-migration.md)
-- [Best Practices](./07-best-practices.md)
-- [Troubleshooting](./08-troubleshooting.md)

@@ -528,7 +528,7 @@ if (DEBUG) {
 ## Related Documentation
 
 - [Handler Documentation](/docs/handler/handler-overview) - **Recommended**: Start with the WTTP Handler
-- [Methods Documentation](/docs/wttp/wttp-methods.md) - Complete HTTP methods reference
-- [Permissions Guide](/docs/wttp/wttp-permissions.md) - Understanding access control
-- [Site Management](/docs/wttp/wttp-sites.md) - Managing WTTP sites
+- [Methods Documentation](/docs/wttp/wttp-methods) - Complete HTTP methods reference
+- [Permissions Guide](/docs/wttp/wttp-permissions) - Understanding access control
+- [Site Management](/docs/wttp/wttp-sites) - Managing WTTP sites
 - [ESP Overview](/docs/esp/esp-overview) - Learn about the Ethereum Storage Protocol
