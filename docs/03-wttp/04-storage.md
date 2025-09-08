@@ -446,4 +446,4 @@ function testChunking() public {
 
 - [BaseWTTPSite Implementation](/docs/wttp/wttp-sites) - How BaseWTTPSite uses BaseWTTPStorage
 - [Permission Management](/docs/wttp/wttp-permissions) - Understanding WTTP access controls
-- [ESP Integration](/docs/esp/esp-integration) - Working with the Ethereum Storage Protocol
+- [ESP Integration](/docs/esp/esp-overview) - Working with the Ethereum Storage Protocol

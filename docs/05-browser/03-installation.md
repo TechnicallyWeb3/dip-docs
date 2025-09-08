@@ -166,7 +166,7 @@ npm run buildAppImage
 The WTTP Browser uses Sepolia testnet by default. To configure different networks:
 
 1. **Default Chain**: Sepolia (11155111)
-2. **Supported Networks**: See the [Modifications Guide](/docs/wttp/browser-modifications) for full list
+2. **Supported Networks**: See the [Modifications Guide](/docs/browser/browser-modifications) for full list
 3. **Custom RPC**: Configure in the WTTP Handler settings
 
 ### Environment Variables
@@ -206,7 +206,7 @@ export WTTP_DEBUG=true
 ### Getting Help
 
 - **GitHub Issues**: [Report bugs or ask questions](https://github.com/TechnicallyWeb3/min-web3/issues)
-- **Documentation**: Check the [WTTP Documentation](/docs/wttp)
+- **Documentation**: Check the [WTTP Documentation](/docs/wttp/wttp-overview)
 - **Community**: Join our Discord for support
 
 ### Debug Mode
@@ -226,9 +226,9 @@ DEBUG=wttp:* npm run start
 
 Once you have the WTTP Browser installed:
 
-1. **Try Example Sites**: Visit some [Web3 examples](/docs/wttp/browser-usage)
+1. **Try Example Sites**: Visit some [Web3 examples](/docs/browser/browser-usage)
 2. **Deploy Your Own**: Learn how to [deploy WTTP sites](/docs/wttp/wttp-deployment)
-3. **Develop Applications**: Use the [WTTP Handler](/docs/wttp/handler-overview) in your projects
+3. **Develop Applications**: Use the [WTTP Handler](/docs/handler/handler-overview) in your projects
 
 ## Security Notes
 

@@ -196,7 +196,7 @@ Enable debug mode to see detailed information about WTTP requests:
 ### Getting Help
 
 - **Error Messages**: Check the browser console for detailed error messages
-- **Documentation**: Refer to the [WTTP Documentation](/docs/wttp)
+- **Documentation**: Refer to the [WTTP Documentation](/docs/wttp/wttp-overview)
 - **Community**: Join our Discord for support
 - **GitHub**: Report issues on our [GitHub repository](https://github.com/TechnicallyWeb3/min-web3)
 
@@ -223,7 +223,7 @@ Now that you know how to use the WTTP Browser:
 
 1. **Explore Examples**: Try the live examples above
 2. **Deploy Your Own**: Learn how to [deploy WTTP sites](/docs/wttp/wttp-deployment)
-3. **Build Applications**: Use the [WTTP Handler](/docs/wttp/handler-overview) in your projects
+3. **Build Applications**: Use the [WTTP Handler](/docs/handler/handler-overview) in your projects
 4. **Join Community**: Connect with other Web3 developers
 
 The WTTP Browser opens up a new world of decentralized web browsing. Start exploring and building the future of the internet!

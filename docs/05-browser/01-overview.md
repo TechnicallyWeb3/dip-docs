@@ -69,4 +69,4 @@ The WTTP Browser extends Min's architecture with:
 
 ## Next Steps
 
-Ready to get started? Check out our [Installation Guide](/docs/wttp/browser-installation) to download and set up the WTTP Browser, or explore [Usage Examples](/docs/wttp/browser-usage) to see the browser in action.
+Ready to get started? Check out our [Installation Guide](/docs/browser/browser-installation) to download and set up the WTTP Browser, or explore [Usage Examples](/docs/browser/browser-usage) to see the browser in action.
