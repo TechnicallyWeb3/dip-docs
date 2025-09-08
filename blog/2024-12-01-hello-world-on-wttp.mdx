@@ -1,0 +1,60 @@
+﻿---
+slug: hello-world-on-wttp
+title: Hello World on WTTP
+authors: [dip-team]
+tags: [wttp, developer, tutorial, dip]
+---
+
+Every new technology needs a **“Hello World”** moment.  
+Here’s how to publish your first WTTP resource in under 10 lines of code.
+
+{/* truncate */}
+
+---
+
+## 🛠 Prerequisites
+- Node.js installed  
+- A funded wallet (on testnet is fine)  
+- The `wttp-handler` library  
+
+```bash
+npm install wttp-handler
+```
+
+---
+
+## 🖊 Write Your First Resource
+```js
+import { WTTPHandler } from 'wttp-handler';
+
+const handler = new WTTPHandler();
+
+await handler.fetch('wttp://my-first-site/index.html', {
+  method: 'PUT',
+  headers: { 
+    'Content-Type': 'text/html',
+    'Content-Location': '/index.html'
+  },
+  body: '<h1>Hello WTTP!</h1>'
+});
+```
+
+That’s it. You’ve just published a permanent, onchain webpage.
+
+---
+
+## 🌍 Viewing Your Site
+Share your link in the format:  
+```
+wttp://[site-address]/index.html
+```
+
+Anyone with the WTTP client can now access your page.  
+
+---
+
+<Callout type="success">
+Congratulations — you’ve taken your first step into the decentralized web.  
+From here, the possibilities are endless.
+</Callout>
+
