@@ -1,7 +1,7 @@
 ﻿---
 slug: welcome-2025
 title: A New Web, Built Together
-date: 2024-12-07
+date: 2024-10-07
 authors: [dip-team]
 tags: [welcome, dip, wttp, web3, decentralized-internet]
 ---
