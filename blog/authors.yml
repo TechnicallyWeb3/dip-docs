@@ -23,3 +23,13 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+dip-team:
+  name: DIP Team
+  title: Decentralized Internet Project
+  url: https://github.com/TechnicallyWeb3
+  image_url: https://github.com/TechnicallyWeb3.png
+  page: true
+  socials:
+    github: TechnicallyWeb3
+    x: TechnicallyWeb3

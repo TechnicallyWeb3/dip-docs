@@ -1,4 +1,4 @@
-facebook:
+﻿facebook:
   label: Facebook
   permalink: /facebook
   description: Facebook tag description
@@ -17,3 +17,123 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+dip:
+  label: DIP
+  permalink: /dip
+  description: Decentralized Internet Project
+
+wttp:
+  label: WTTP
+  permalink: /wttp
+  description: Web3 Transfer Protocol
+
+esp:
+  label: ESP
+  permalink: /esp
+  description: Ethereum Storage Protocol
+
+web3:
+  label: Web3
+  permalink: /web3
+  description: Web3 and decentralized technologies
+
+blockchain:
+  label: Blockchain
+  permalink: /blockchain
+  description: Blockchain technology and applications
+
+decentralized-web:
+  label: Decentralized Web
+  permalink: /decentralized-web
+  description: Decentralized web technologies and concepts
+
+introduction:
+  label: Introduction
+  permalink: /introduction
+  description: Introductory content and getting started guides
+
+philosophy:
+  label: Philosophy
+  permalink: /philosophy
+  description: DIP philosophy and principles
+
+roadmap:
+  label: Roadmap
+  permalink: /roadmap
+  description: DIP development roadmap and milestones
+
+collaborative-web:
+  label: Collaborative Web
+  permalink: /collaborative-web
+  description: Collaborative web development and frameworks
+
+hosting:
+  label: Hosting
+  permalink: /hosting
+  description: Decentralized web hosting solutions
+
+smart-contracts:
+  label: Smart Contracts
+  permalink: /smart-contracts
+  description: Smart contract development and applications
+
+royalties:
+  label: Royalties
+  permalink: /royalties
+  description: Royalty systems and economic incentives
+
+decentralized:
+  label: Decentralized
+  permalink: /decentralized
+  description: Decentralized systems and applications
+
+ethereum:
+  label: Ethereum
+  permalink: /ethereum
+  description: Ethereum blockchain and applications
+
+storage:
+  label: Storage
+  permalink: /storage
+  description: Decentralized storage solutions
+
+welcome:
+  label: Welcome
+  permalink: /welcome
+  description: Welcome and getting started content
+
+getting-started:
+  label: Getting Started
+  permalink: /getting-started
+  description: Getting started guides and tutorials
+
+creators:
+  label: Creators
+  permalink: /blog/tags/creators
+
+developer:
+  label: Developer
+  permalink: /blog/tags/developer
+
+tutorial:
+  label: Tutorial
+  permalink: /blog/tags/tutorial
+
+
+advanced-features:
+  label: Advanced Features
+  permalink: /blog/tags/advanced-features
+
+explainer:
+  label: Explainer
+  permalink: /blog/tags/explainer
+
+decentralized-internet:
+  label: Decentralized Internet
+  permalink: /blog/tags/decentralized-internet
+
+multi-network:
+  label: Multi-Network
+  permalink: /blog/tags/multi-network
+

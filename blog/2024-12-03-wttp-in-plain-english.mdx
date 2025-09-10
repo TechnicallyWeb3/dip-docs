@@ -1,0 +1,74 @@
+﻿---
+slug: wttp-in-plain-english
+title: WTTP in Plain English
+authors: [dip-team]
+tags: [wttp, explainer, dip, decentralized-internet]
+date: 2024-12-03
+---
+
+When people first hear about the **Web3 Transfer Protocol (WTTP)**, the instinct is to ask:  
+> *“Isn’t this just blockchain jargon for something we already have?”*  
+
+The answer: no. It’s a re-imagining of the web’s plumbing—familiar enough to use, but designed for permanence and fairness.  
+Let’s break it down in **plain English**.
+
+{/* truncate */}
+
+---
+
+## 🔧 WTTP = HTTP + Blockchain
+The web you use every day runs on **HTTP**. It’s the protocol behind every `https://` link you’ve ever clicked.  
+WTTP is its decentralized cousin.
+
+- `GET`: still retrieves content.  
+- `PUT`: still uploads content.  
+- `PATCH`: still updates content.  
+- But now these calls happen **onchain**.  
+
+That means:
+- Nobody can silently delete or change your files.  
+- Your resources live as permanent records.  
+- The network, not a company, keeps them alive.
+
+---
+
+## 💡 The Big Differences
+1. **Content addressing**  
+   Every piece of content has a unique fingerprint. If two people upload the same file, it only gets stored once.  
+
+2. **Built-in royalties**  
+   If someone reuses your content, WTTP pays you automatically. The system itself tracks who created what.  
+
+3. **Permissions you define**  
+   Want to make part of your site open, another part editable by collaborators? WTTP’s role system makes that possible.  
+
+---
+
+## 🧪 A Quick Example
+Publishing your first WTTP resource is as simple as:  
+
+```js
+import { WTTPHandler } from 'wttp-handler';
+
+const handler = new WTTPHandler();
+await handler.fetch('wttp://mysite.bio', {
+  method: 'PUT',
+  headers: { 'Content-Type': 'text/plain' },
+  body: 'Hello, permanent web!'
+});
+```
+
+Now that text isn’t tied to a server. It’s part of the blockchain web.  
+
+---
+
+<Callout type="success">
+WTTP isn’t about replacing the internet you know — it’s about giving it a memory, fairness, and resilience.
+</Callout>
+
+---
+
+## 🌱 What’s Next
+We’ll keep writing guides and sharing demos. The next time someone asks what WTTP is, send them this page.  
+If they get the idea, they’ll see why DIP exists.  
+

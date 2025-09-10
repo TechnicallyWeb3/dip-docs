@@ -1,0 +1,49 @@
+﻿---
+slug: chunking-the-web
+title: "Chunking the Web: How WTTP Handles Big Files"
+authors: [dip-team]
+tags: [wttp, storage, dip, advanced-features]
+---
+
+One of the biggest misconceptions about blockchain is:  
+> *“You can’t store large files onchain—it’s too expensive.”*  
+
+WTTP proves that wrong with **chunking**, a simple but powerful idea.
+
+{/* truncate */}
+
+---
+
+## 🧩 What is Chunking?
+Instead of trying to cram an entire file into a single transaction, WTTP **splits files into smaller pieces** called chunks.  
+
+- Each chunk is about 16KB.  
+- Chunks are stored as **DataPoints** with unique addresses.  
+- Together, they reassemble into your original file.  
+
+---
+
+## 💡 Why It Matters
+- **Cost Efficiency**: Storing 100 small pieces is cheaper (and safer) than one massive blob.  
+- **Reliability**: If one chunk fails, you don’t lose the entire file.  
+- **Scalability**: Big assets like images, documents, even apps can live fully onchain.  
+
+---
+
+## 🔍 Example
+When you upload a 1MB image to WTTP:  
+- The file is split into ~64 chunks.  
+- Each chunk gets its own address.  
+- WTTP automatically reassembles them when someone requests the file.  
+
+To the user, it feels like downloading a normal file—  
+but under the hood, it’s a symphony of chunks.
+
+---
+
+<Callout type="success">
+Chunking turns blockchain storage from “impractical” to **unstoppable**.  
+The bigger the web gets, the more this matters.
+</Callout>
+
+
