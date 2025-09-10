@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docs.thedip.net/blog</id>
+    <title>The Decentralized Internet Project Docs Blog</title>
+    <updated>2024-12-06T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://docs.thedip.net/blog"/>
+    <subtitle>The Decentralized Internet Project Docs Blog</subtitle>
+    <icon>https://docs.thedip.net/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[WTTP Across Chains: The Multi-Network Web]]></title>
+        <id>https://docs.thedip.net/blog/wttp-across-chains</id>
+        <link href="https://docs.thedip.net/blog/wttp-across-chains"/>
+        <updated>2024-12-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The web doesn’t stop at one server.]]></summary>
+        <content type="html"><![CDATA[<p>The web doesn’t stop at one server.<br>
+<!-- -->So why should the decentralized web stop at one chain?</p>
+<p>WTTP was designed for <strong>multi-network support</strong> from day one.</p>
+<!-- -->
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-what-multi-network-means">🌐 What Multi-Network Means<a href="https://docs.thedip.net/blog/wttp-across-chains#-what-multi-network-means" class="hash-link" aria-label="Direct link to 🌐 What Multi-Network Means" title="Direct link to 🌐 What Multi-Network Means">​</a></h2>
+<p>WTTP sites can be deployed on:</p>
+<ul>
+<li>Ethereum</li>
+<li>Polygon</li>
+<li>Base</li>
+<li>Arbitrum</li>
+<li>Fantom</li>
+<li>Avalanche<br>
+<!-- -->…and more.</li>
+</ul>
+<p>Each network is just another home for your site.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-benefits">⚡ Benefits<a href="https://docs.thedip.net/blog/wttp-across-chains#-benefits" class="hash-link" aria-label="Direct link to ⚡ Benefits" title="Direct link to ⚡ Benefits">​</a></h2>
+<ol>
+<li>
+<p><strong>Resilience</strong><br>
+<!-- -->If one chain slows down, your site still lives elsewhere.</p>
+</li>
+<li>
+<p><strong>Choice</strong><br>
+<!-- -->Developers can pick the network that best fits their needs (fees, speed, community).</p>
+</li>
+<li>
+<p><strong>Interoperability</strong><br>
+<!-- -->A WTTP link doesn’t care which chain it’s on—the protocol handles the rest.</p>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-under-the-hood">🔧 Under the Hood<a href="https://docs.thedip.net/blog/wttp-across-chains#-under-the-hood" class="hash-link" aria-label="Direct link to 🔧 Under the Hood" title="Direct link to 🔧 Under the Hood">​</a></h2>
+<ul>
+<li>The <strong>ProviderManager</strong> handles network switching.</li>
+<li>The <strong>ContractManager</strong> keeps track of addresses across chains.</li>
+<li>Your <code>wttp.config.json</code> file is the map that ties it all together.</li>
+</ul>
+<hr>
+<div class="alert alert--info" role="alert"><div><p>The web was always bigger than one machine.<br>
+<!-- -->Now it’s bigger than one blockchain.</p></div></div>]]></content>
+        <author>
+            <name>DIP Team</name>
+            <uri>https://github.com/TechnicallyWeb3</uri>
+        </author>
+        <category label="WTTP" term="WTTP"/>
+        <category label="Multi-Network" term="Multi-Network"/>
+        <category label="DIP" term="DIP"/>
+        <category label="Blockchain" term="Blockchain"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Chunking the Web: How WTTP Handles Big Files]]></title>
+        <id>https://docs.thedip.net/blog/chunking-the-web</id>
+        <link href="https://docs.thedip.net/blog/chunking-the-web"/>
+        <updated>2024-12-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[One of the biggest misconceptions about blockchain is:]]></summary>
+        <content type="html"><![CDATA[<p>One of the biggest misconceptions about blockchain is:</p>
+<blockquote>
+<p><em>“You can’t store large files onchain—it’s too expensive.”</em></p>
+</blockquote>
+<p>WTTP proves that wrong with <strong>chunking</strong>, a simple but powerful idea.</p>
+<!-- -->
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-what-is-chunking">🧩 What is Chunking?<a href="https://docs.thedip.net/blog/chunking-the-web#-what-is-chunking" class="hash-link" aria-label="Direct link to 🧩 What is Chunking?" title="Direct link to 🧩 What is Chunking?">​</a></h2>
+<p>Instead of trying to cram an entire file into a single transaction, WTTP <strong>splits files into smaller pieces</strong> called chunks.</p>
+<ul>
+<li>Each chunk is about 16KB.</li>
+<li>Chunks are stored as <strong>DataPoints</strong> with unique addresses.</li>
+<li>Together, they reassemble into your original file.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-why-it-matters">💡 Why It Matters<a href="https://docs.thedip.net/blog/chunking-the-web#-why-it-matters" class="hash-link" aria-label="Direct link to 💡 Why It Matters" title="Direct link to 💡 Why It Matters">​</a></h2>
+<ul>
+<li><strong>Cost Efficiency</strong>: Storing 100 small pieces is cheaper (and safer) than one massive blob.</li>
+<li><strong>Reliability</strong>: If one chunk fails, you don’t lose the entire file.</li>
+<li><strong>Scalability</strong>: Big assets like images, documents, even apps can live fully onchain.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-example">🔍 Example<a href="https://docs.thedip.net/blog/chunking-the-web#-example" class="hash-link" aria-label="Direct link to 🔍 Example" title="Direct link to 🔍 Example">​</a></h2>
+<p>When you upload a 1MB image to WTTP:</p>
+<ul>
+<li>The file is split into ~64 chunks.</li>
+<li>Each chunk gets its own address.</li>
+<li>WTTP automatically reassembles them when someone requests the file.</li>
+</ul>
+<p>To the user, it feels like downloading a normal file—<br>
+<!-- -->but under the hood, it’s a symphony of chunks.</p>
+<hr>
+<div class="alert alert--success" role="alert"><div><p>Chunking turns blockchain storage from “impractical” to <strong>unstoppable</strong>.<br>
+<!-- -->The bigger the web gets, the more this matters.</p></div></div>]]></content>
+        <author>
+            <name>DIP Team</name>
+            <uri>https://github.com/TechnicallyWeb3</uri>
+        </author>
+        <category label="WTTP" term="WTTP"/>
+        <category label="Storage" term="Storage"/>
+        <category label="DIP" term="DIP"/>
+        <category label="Advanced Features" term="Advanced Features"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[WTTP in Plain English]]></title>
+        <id>https://docs.thedip.net/blog/wttp-in-plain-english</id>
+        <link href="https://docs.thedip.net/blog/wttp-in-plain-english"/>
+        <updated>2024-12-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[When people first hear about the Web3 Transfer Protocol (WTTP), the instinct is to ask:]]></summary>
+        <content type="html"><![CDATA[<p>When people first hear about the <strong>Web3 Transfer Protocol (WTTP)</strong>, the instinct is to ask:</p>
+<blockquote>
+<p><em>“Isn’t this just blockchain jargon for something we already have?”</em></p>
+</blockquote>
+<p>The answer: no. It’s a re-imagining of the web’s plumbing—familiar enough to use, but designed for permanence and fairness.<br>
+<!-- -->Let’s break it down in <strong>plain English</strong>.</p>
+<!-- -->
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-wttp--http--blockchain">🔧 WTTP = HTTP + Blockchain<a href="https://docs.thedip.net/blog/wttp-in-plain-english#-wttp--http--blockchain" class="hash-link" aria-label="Direct link to 🔧 WTTP = HTTP + Blockchain" title="Direct link to 🔧 WTTP = HTTP + Blockchain">​</a></h2>
+<p>The web you use every day runs on <strong>HTTP</strong>. It’s the protocol behind every <code>https://</code> link you’ve ever clicked.<br>
+<!-- -->WTTP is its decentralized cousin.</p>
+<ul>
+<li><code>GET</code>: still retrieves content.</li>
+<li><code>PUT</code>: still uploads content.</li>
+<li><code>PATCH</code>: still updates content.</li>
+<li>But now these calls happen <strong>onchain</strong>.</li>
+</ul>
+<p>That means:</p>
+<ul>
+<li>Nobody can silently delete or change your files.</li>
+<li>Your resources live as permanent records.</li>
+<li>The network, not a company, keeps them alive.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-the-big-differences">💡 The Big Differences<a href="https://docs.thedip.net/blog/wttp-in-plain-english#-the-big-differences" class="hash-link" aria-label="Direct link to 💡 The Big Differences" title="Direct link to 💡 The Big Differences">​</a></h2>
+<ol>
+<li>
+<p><strong>Content addressing</strong><br>
+<!-- -->Every piece of content has a unique fingerprint. If two people upload the same file, it only gets stored once.</p>
+</li>
+<li>
+<p><strong>Built-in royalties</strong><br>
+<!-- -->If someone reuses your content, WTTP pays you automatically. The system itself tracks who created what.</p>
+</li>
+<li>
+<p><strong>Permissions you define</strong><br>
+<!-- -->Want to make part of your site open, another part editable by collaborators? WTTP’s role system makes that possible.</p>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-a-quick-example">🧪 A Quick Example<a href="https://docs.thedip.net/blog/wttp-in-plain-english#-a-quick-example" class="hash-link" aria-label="Direct link to 🧪 A Quick Example" title="Direct link to 🧪 A Quick Example">​</a></h2>
+<p>Publishing your first WTTP resource is as simple as:</p>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword module" style="color:#00009f">import</span><span class="token plain"> </span><span class="token imports punctuation" style="color:#393A34">{</span><span class="token imports"> </span><span class="token imports maybe-class-name">WTTPHandler</span><span class="token imports"> </span><span class="token imports punctuation" style="color:#393A34">}</span><span class="token plain"> </span><span class="token keyword module" style="color:#00009f">from</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">'wttp-handler'</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> handler </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">new</span><span class="token plain"> </span><span class="token class-name">WTTPHandler</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword control-flow" style="color:#00009f">await</span><span class="token plain"> handler</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">fetch</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">'wttp://mysite.bio'</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">method</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">'PUT'</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">headers</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"> </span><span class="token string-property property" style="color:#36acaa">'Content-Type'</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">'text/plain'</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">body</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">'Hello, permanent web!'</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+<p>Now that text isn’t tied to a server. It’s part of the blockchain web.</p>
+<hr>
+<div class="alert alert--success" role="alert"><div><p>WTTP isn’t about replacing the internet you know — it’s about giving it a memory, fairness, and resilience.</p></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-whats-next">🌱 What’s Next<a href="https://docs.thedip.net/blog/wttp-in-plain-english#-whats-next" class="hash-link" aria-label="Direct link to 🌱 What’s Next" title="Direct link to 🌱 What’s Next">​</a></h2>
+<p>We’ll keep writing guides and sharing demos. The next time someone asks what WTTP is, send them this page.<br>
+<!-- -->If they get the idea, they’ll see why DIP exists.</p>]]></content>
+        <author>
+            <name>DIP Team</name>
+            <uri>https://github.com/TechnicallyWeb3</uri>
+        </author>
+        <category label="WTTP" term="WTTP"/>
+        <category label="Explainer" term="Explainer"/>
+        <category label="DIP" term="DIP"/>
+        <category label="Decentralized Internet" term="Decentralized Internet"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Royalties Built Into the Web]]></title>
+        <id>https://docs.thedip.net/blog/royalties-on-the-web</id>
+        <link href="https://docs.thedip.net/blog/royalties-on-the-web"/>
+        <updated>2024-12-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[For most of the web’s history, creators got the short end of the stick.]]></summary>
+        <content type="html"><![CDATA[<p>For most of the web’s history, creators got the short end of the stick.<br>
+<!-- -->Your content is copied, reshared, monetized — and you might never see a cent.</p>
+<p>The <strong>Decentralized Internet Project (DIP)</strong> is changing that with WTTP.<br>
+<!-- -->Here’s how <strong>royalties become part of the web itself</strong>.</p>
+<!-- -->
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-the-problem-today">🎨 The Problem Today<a href="https://docs.thedip.net/blog/royalties-on-the-web#-the-problem-today" class="hash-link" aria-label="Direct link to 🎨 The Problem Today" title="Direct link to 🎨 The Problem Today">​</a></h2>
+<ul>
+<li><strong>Artists</strong> upload to platforms that take most of the revenue.</li>
+<li><strong>Developers</strong> share open-source code that powers million-dollar apps, without reward.</li>
+<li><strong>Writers</strong> publish posts that others rehost, remix, or monetize.</li>
+</ul>
+<p>The common thread? Value flows <em>away</em> from the creator.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-wttps-solution">💰 WTTP’s Solution<a href="https://docs.thedip.net/blog/royalties-on-the-web#-wttps-solution" class="hash-link" aria-label="Direct link to 💰 WTTP’s Solution" title="Direct link to 💰 WTTP’s Solution">​</a></h2>
+<p>Every piece of content in WTTP is stored as a <strong>DataPoint</strong>.<br>
+<!-- -->When someone reuses your DataPoint:</p>
+<ol>
+<li>They pay a small royalty.</li>
+<li><strong>90%</strong> goes to you, the creator.</li>
+<li><strong>10%</strong> supports the network.</li>
+</ol>
+<p>This happens <strong>automatically</strong>. No middlemen, no lawsuits, no ad networks.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-why-this-works">🔑 Why This Works<a href="https://docs.thedip.net/blog/royalties-on-the-web#-why-this-works" class="hash-link" aria-label="Direct link to 🔑 Why This Works" title="Direct link to 🔑 Why This Works">​</a></h2>
+<ul>
+<li><strong>Fairness baked in</strong>: the system itself enforces royalties.</li>
+<li><strong>Global reach</strong>: your DataPoint works across all WTTP sites and networks.</li>
+<li><strong>Incentives aligned</strong>: creators are rewarded for making things worth reusing.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-a-simple-example">🧩 A Simple Example<a href="https://docs.thedip.net/blog/royalties-on-the-web#-a-simple-example" class="hash-link" aria-label="Direct link to 🧩 A Simple Example" title="Direct link to 🧩 A Simple Example">​</a></h2>
+<p>Let’s say you upload an image to WTTP.</p>
+<ul>
+<li>A blogger uses it in their article.</li>
+<li>A developer reuses it in an app.</li>
+<li>A designer builds on it in their portfolio.</li>
+</ul>
+<p>Each reuse triggers a royalty payment back to you. The more your work travels, the more you earn.</p>
+<hr>
+<div class="alert alert--info" role="alert"><div><p>Think of it as <strong>Web3’s answer to Creative Commons</strong>: you decide what to share, and if it’s reused, the network pays you fairly.</p></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-why-it-matters">🚀 Why It Matters<a href="https://docs.thedip.net/blog/royalties-on-the-web#-why-it-matters" class="hash-link" aria-label="Direct link to 🚀 Why It Matters" title="Direct link to 🚀 Why It Matters">​</a></h2>
+<p>Royalties change the economics of the web.<br>
+<!-- -->Instead of “winner-takes-all” platforms, we get a <strong>commons where creators are valued</strong>.</p>
+<p>That’s what DIP is about.<br>
+<!-- -->That’s why WTTP matters.</p>]]></content>
+        <author>
+            <name>DIP Team</name>
+            <uri>https://github.com/TechnicallyWeb3</uri>
+        </author>
+        <category label="Royalties" term="Royalties"/>
+        <category label="Creators" term="Creators"/>
+        <category label="WTTP" term="WTTP"/>
+        <category label="DIP" term="DIP"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello World on WTTP]]></title>
+        <id>https://docs.thedip.net/blog/hello-world-on-wttp</id>
+        <link href="https://docs.thedip.net/blog/hello-world-on-wttp"/>
+        <updated>2024-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Every new technology needs a “Hello World” moment.]]></summary>
+        <content type="html"><![CDATA[<p>Every new technology needs a <strong>“Hello World”</strong> moment.<br>
+<!-- -->Here’s how to publish your first WTTP resource in under 10 lines of code.</p>
+<!-- -->
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-prerequisites">🛠 Prerequisites<a href="https://docs.thedip.net/blog/hello-world-on-wttp#-prerequisites" class="hash-link" aria-label="Direct link to 🛠 Prerequisites" title="Direct link to 🛠 Prerequisites">​</a></h2>
+<ul>
+<li>Node.js installed</li>
+<li>A funded wallet (on testnet is fine)</li>
+<li>The <code>wttp-handler</code> library</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm install wttp-handler</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-write-your-first-resource">🖊 Write Your First Resource<a href="https://docs.thedip.net/blog/hello-world-on-wttp#-write-your-first-resource" class="hash-link" aria-label="Direct link to 🖊 Write Your First Resource" title="Direct link to 🖊 Write Your First Resource">​</a></h2>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword module" style="color:#00009f">import</span><span class="token plain"> </span><span class="token imports punctuation" style="color:#393A34">{</span><span class="token imports"> </span><span class="token imports maybe-class-name">WTTPHandler</span><span class="token imports"> </span><span class="token imports punctuation" style="color:#393A34">}</span><span class="token plain"> </span><span class="token keyword module" style="color:#00009f">from</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">'wttp-handler'</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> handler </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">new</span><span class="token plain"> </span><span class="token class-name">WTTPHandler</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword control-flow" style="color:#00009f">await</span><span class="token plain"> handler</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">fetch</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">'wttp://my-first-site/index.html'</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">method</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">'PUT'</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">headers</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token string-property property" style="color:#36acaa">'Content-Type'</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">'text/html'</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token string-property property" style="color:#36acaa">'Content-Location'</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">'/index.html'</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">body</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">'&lt;h1&gt;Hello WTTP!&lt;/h1&gt;'</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+<p>That’s it. You’ve just published a permanent, onchain webpage.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-viewing-your-site">🌍 Viewing Your Site<a href="https://docs.thedip.net/blog/hello-world-on-wttp#-viewing-your-site" class="hash-link" aria-label="Direct link to 🌍 Viewing Your Site" title="Direct link to 🌍 Viewing Your Site">​</a></h2>
+<p>Share your link in the format:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">wttp://[site-address]/index.html</span><br></span></code></pre></div></div>
+<p>Anyone with the WTTP client can now access your page.</p>
+<hr>
+<div class="alert alert--success" role="alert"><div><p>Congratulations — you’ve taken your first step into the decentralized web.<br>
+<!-- -->From here, the possibilities are endless.</p></div></div>]]></content>
+        <author>
+            <name>DIP Team</name>
+            <uri>https://github.com/TechnicallyWeb3</uri>
+        </author>
+        <category label="WTTP" term="WTTP"/>
+        <category label="Developer" term="Developer"/>
+        <category label="Tutorial" term="Tutorial"/>
+        <category label="DIP" term="DIP"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A New Web, Built Together]]></title>
+        <id>https://docs.thedip.net/blog/welcome-2025</id>
+        <link href="https://docs.thedip.net/blog/welcome-2025"/>
+        <updated>2024-10-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We started the Decentralized Internet Project (DIP) because the web has forgotten something important:]]></summary>
+        <content type="html"><![CDATA[<p>We started the <strong>Decentralized Internet Project (DIP)</strong> because the web has forgotten something important:<br>
+<!-- -->it was meant to belong to <em>all of us</em>.</p>
+<p>Today, most of the web lives on platforms that can vanish, change their terms, or shut you out with a single click.<br>
+<!-- -->With <strong>WTTP (Web3 Transfer Protocol)</strong>, we’re putting publishing power back in your hands—<br>
+<!-- -->so your site, your words, your work stay <em>yours</em>, permanently.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-what-were-building">🌍 What we’re building<a href="https://docs.thedip.net/blog/welcome-2025#-what-were-building" class="hash-link" aria-label="Direct link to 🌍 What we’re building" title="Direct link to 🌍 What we’re building">​</a></h2>
+<ul>
+<li><strong>WTTP</strong>: a decentralized protocol to publish websites to the blockchain and keep them online for good.</li>
+<li><strong>DataPoint Registry</strong>: content addressing + built-in royalties, so creators are rewarded when their work is reused.</li>
+<li><strong>Custom Sites</strong>: tools that let you build, test, and deploy decentralized sites with the same ease as uploading a file.</li>
+</ul>
+<p>Think of it as HTTP reinvented for Web3—familiar methods like <code>GET</code> and <code>PUT</code>, but with immutability, ownership, and creator incentives baked in.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-why-it-matters">✨ Why it matters<a href="https://docs.thedip.net/blog/welcome-2025#-why-it-matters" class="hash-link" aria-label="Direct link to ✨ Why it matters" title="Direct link to ✨ Why it matters">​</a></h2>
+<p>If you’ve ever:</p>
+<ul>
+<li>clicked a link only to find it broken,</li>
+<li>seen your work reshared without credit,</li>
+<li>or wondered why your digital identity depends on a company’s server staying online…</li>
+</ul>
+<p>then you already understand the need.<br>
+<!-- -->WTTP makes links durable, gives credit where it’s due, and cuts out the single points of failure.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-how-to-get-started">🚀 How to get started<a href="https://docs.thedip.net/blog/welcome-2025#-how-to-get-started" class="hash-link" aria-label="Direct link to 🚀 How to get started" title="Direct link to 🚀 How to get started">​</a></h2>
+<p>Pick one small thing that matters to you:</p>
+<ul>
+<li>your personal bio,</li>
+<li>a project README,</li>
+<li>a manifesto,</li>
+</ul>
+<p>…and publish it on WTTP. Share the link. Notice how it feels when <em>you</em> control the endpoint—not a platform.</p>
+<div class="alert alert--info" role="alert"><div><p>You don’t need to rebuild the whole web overnight. Start small. Permanence grows one resource at a time.</p></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-the-road-ahead">🤝 The road ahead<a href="https://docs.thedip.net/blog/welcome-2025#-the-road-ahead" class="hash-link" aria-label="Direct link to 🤝 The road ahead" title="Direct link to 🤝 The road ahead">​</a></h2>
+<p>This blog won’t be a whitepaper dump. Expect:</p>
+<ul>
+<li>Creator and developer spotlights</li>
+<li>Notes on what works (and what still doesn’t)</li>
+<li>Honest updates as we push DIP and WTTP forward</li>
+</ul>
+<p>The web’s future will be more collaborative, resilient, and worth keeping—<br>
+<strong>if we build it together.</strong></p>
+<p>Welcome to the next chapter of the internet.</p>]]></content>
+        <author>
+            <name>DIP Team</name>
+            <uri>https://github.com/TechnicallyWeb3</uri>
+        </author>
+        <category label="Welcome" term="Welcome"/>
+        <category label="DIP" term="DIP"/>
+        <category label="WTTP" term="WTTP"/>
+        <category label="Web3" term="Web3"/>
+        <category label="Decentralized Internet" term="Decentralized Internet"/>
+    </entry>
+</feed>
