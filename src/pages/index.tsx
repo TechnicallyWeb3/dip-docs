@@ -33,8 +33,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title} - Decentralized Web Infrastructure`}
+      description="The Decentralized Internet Project (DIP) - Build, host, and monetize websites on the blockchain. Censorship-resistant, economically incentivized, and truly decentralized.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

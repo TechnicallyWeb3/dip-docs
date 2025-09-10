@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Decentralized Hosting',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Host websites and applications directly on smart contracts using WTTP.
+        No servers, no downtime, just pure blockchain-powered hosting.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Censorship Resistant',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Your content lives on the blockchain, making it as resilient as the
+        underlying network. No one can take down your site.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Economic Incentives',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Earn royalties when others reuse your content. Build once, get paid
+        forever through our innovative royalty system.
       </>
     ),
   },
